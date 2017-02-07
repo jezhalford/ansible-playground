@@ -8,3 +8,6 @@
   tasks:
     - name: Find out the user we're connecting as
       command: whoami
+      register: out
+
+    - debug: var=out

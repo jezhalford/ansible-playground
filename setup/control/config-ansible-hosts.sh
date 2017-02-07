@@ -4,6 +4,11 @@ cat << EOF > /etc/ansible/hosts
 localhost
 
 [playground]
-33.33.33.11
+host
+
+EOF
+
+cat << EOF >> /etc/hosts
+33.33.33.11 host
 
 EOF
