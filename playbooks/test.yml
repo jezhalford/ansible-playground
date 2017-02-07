@@ -1,0 +1,10 @@
+---
+- hosts:
+    - playground
+
+  become: true
+  become_method: sudo
+
+  tasks:
+    - name: Find out the user we're connecting as
+      command: whoami
